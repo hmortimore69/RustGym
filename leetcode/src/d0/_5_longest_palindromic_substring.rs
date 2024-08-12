@@ -15,6 +15,7 @@ impl Solution {
                 max_len = 2;
             }
         }
+        
         for len in 3..=n {
             for i in 0..=n - len {
                 let j = i + len - 1;
@@ -25,6 +26,7 @@ impl Solution {
                 }
             }
         }
+
         String::from_utf8(s[start..start + max_len].to_vec()).unwrap()
     }
 }
