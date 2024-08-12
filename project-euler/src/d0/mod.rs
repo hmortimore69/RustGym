@@ -1,0 +1,12 @@
+mod _1_multiples_of_3_or_5;
+mod _2_even_fibonacci_numbers;
+mod _3_largest_prime_factor;
+mod _4_largest_palindrome_number;
+mod _5_smallest_multiple;
+mod _6_sum_square_difference;
+mod _7_10001st_prime;
+mod _8_largest_product_in_a_series;
+mod _9_special_pythagorean_triplet;
+mod _10_summation_of_primes;
+mod _11_largest_product_in_a_grid;
+mod _12_highly_divisible_triangle_number;
