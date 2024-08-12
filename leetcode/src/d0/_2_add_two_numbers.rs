@@ -48,7 +48,7 @@ impl Solution {
 }
 
 #[test]
-fn test_a() {
+fn test() {
     let l1 = Some(Box::new(ListNode {
         val: 2,
         next: Some(Box::new(ListNode {
