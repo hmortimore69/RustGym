@@ -1,26 +1,41 @@
 use std::cmp::max;
 
-fn _solution(grid: &str) -> u32{
+fn _solution(grid: &str) -> u32 {
     let mut max_product = 0;
-    let grid: Vec<Vec<u32>> = grid.lines()
-        .map(|line| line.split_whitespace()
-            .map(|num| num.parse().unwrap())
-            .collect())
+    let grid: Vec<Vec<u32>> = grid
+        .lines()
+        .map(|line| {
+            line.split_whitespace()
+                .map(|num| num.parse().unwrap())
+                .collect()
+        })
         .collect();
 
     for i in 0..20 {
         for j in 0..20 {
             if i + 3 < 20 {
-                max_product = max(max_product, grid[i][j] * grid[i + 1][j] * grid[i + 2][j] * grid[i + 3][j]);
+                max_product = max(
+                    max_product,
+                    grid[i][j] * grid[i + 1][j] * grid[i + 2][j] * grid[i + 3][j],
+                );
             }
             if j + 3 < 20 {
-                max_product = max(max_product, grid[i][j] * grid[i][j + 1] * grid[i][j + 2] * grid[i][j + 3]);
+                max_product = max(
+                    max_product,
+                    grid[i][j] * grid[i][j + 1] * grid[i][j + 2] * grid[i][j + 3],
+                );
             }
             if i + 3 < 20 && j + 3 < 20 {
-                max_product = max(max_product, grid[i][j] * grid[i + 1][j + 1] * grid[i + 2][j + 2] * grid[i + 3][j + 3]);
+                max_product = max(
+                    max_product,
+                    grid[i][j] * grid[i + 1][j + 1] * grid[i + 2][j + 2] * grid[i + 3][j + 3],
+                );
             }
             if i >= 3 && j + 3 < 20 {
-                max_product = max(max_product, grid[i][j] * grid[i - 1][j + 1] * grid[i - 2][j + 2] * grid[i - 3][j + 3]);
+                max_product = max(
+                    max_product,
+                    grid[i][j] * grid[i - 1][j + 1] * grid[i - 2][j + 2] * grid[i - 3][j + 3],
+                );
             }
         }
     }
@@ -50,6 +65,6 @@ fn test() {
 20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16
 20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48";
-    
+
     println!("{}", _solution(GRID));
 }
