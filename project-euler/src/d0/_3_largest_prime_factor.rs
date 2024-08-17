@@ -21,5 +21,5 @@ fn _solution(n: i64) -> i64 {
 
 #[test]
 fn test() {
-    println!("Sum: {}", _solution(600851475143));
+    println!("{}", _solution(600851475143));
 }

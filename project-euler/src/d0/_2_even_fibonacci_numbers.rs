@@ -19,5 +19,5 @@ fn _solution() -> i32 {
 
 #[test]
 fn test() {
-    println!("Sum: {}", _solution());
+    println!("{}", _solution());
 }

@@ -3,6 +3,7 @@ mod _11_largest_product_in_a_grid;
 mod _12_highly_divisible_triangle_number;
 mod _13_large_sum;
 mod _14_longest_collatz_sequence;
+mod _15_lattice_paths;
 mod _1_multiples_of_3_or_5;
 mod _2_even_fibonacci_numbers;
 mod _3_largest_prime_factor;

@@ -27,5 +27,5 @@ fn _is_palindrome(n: i32) -> bool {
 
 #[test]
 fn test() {
-    println!("Largest palindrome: {}", _solution());
+    println!("{}", _solution());
 }

@@ -13,5 +13,5 @@ fn _solution() -> i32 {
 
 #[test]
 fn test() {
-    println!("Largest palindrome: {}", _solution());
+    println!("{}", _solution());
 }
