@@ -5,6 +5,7 @@ mod _13_large_sum;
 mod _14_longest_collatz_sequence;
 mod _15_lattice_paths;
 mod _16_power_digit_sum;
+mod _17_number_letter_counts;
 mod _1_multiples_of_3_or_5;
 mod _2_even_fibonacci_numbers;
 mod _3_largest_prime_factor;
