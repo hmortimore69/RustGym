@@ -30,6 +30,7 @@ fn _dow(year: i32, month: usize, day: f32) -> i32 {
         + 5 * zero_based_century)
         % 7
 }
+
 #[test]
 fn test() {
     println!("{}", _solution());
