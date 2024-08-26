@@ -10,7 +10,7 @@ fn _sieve_of_eratosthenes(n: usize) {
         p += 1;
     }
     let mut count = 0;
-    
+
     for i in 2..=n {
         if primes[i] {
             count += 1;

@@ -4,7 +4,11 @@ fn _solution() -> i32 {
     let mut months = [31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
     for y in 1901..=2000 {
-        months[1] = if y % 4 == 0 && (y % 100 != 0 || y % 400 == 0) { 29 } else { 28 };
+        months[1] = if y % 4 == 0 && (y % 100 != 0 || y % 400 == 0) {
+            29
+        } else {
+            28
+        };
 
         for &month in months.iter() {
             if dow % 7 == 0 {

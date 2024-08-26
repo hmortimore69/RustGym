@@ -10,7 +10,7 @@ fn _solution() -> BigUint {
     let x = 20;
     let y = 20;
 
-    _factorial(x+y) / (_factorial(x) * _factorial(x))
+    _factorial(x + y) / (_factorial(x) * _factorial(x))
 }
 
 #[test]

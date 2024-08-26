@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-fn _solution() -> usize{
+fn _solution() -> usize {
     let map: HashMap<i32, &str> = HashMap::from([
         (1, "one"),
         (2, "two"),
@@ -49,7 +49,7 @@ fn _solution() -> usize{
         if num >= 100 {
             num_str.push_str(map.get(&(num / 100)).unwrap());
             num_str.push_str(map.get(&100).unwrap());
-            
+
             if num % 100 != 0 {
                 num_str.push_str("and");
             }
