@@ -11,6 +11,7 @@ mod _19_counting_sundays;
 mod _1_multiples_of_3_or_5;
 mod _20_factorial_sum;
 mod _21_amicable_numbers;
+mod _22_names_scores;
 mod _2_even_fibonacci_numbers;
 mod _3_largest_prime_factor;
 mod _4_largest_palindrome_number;
