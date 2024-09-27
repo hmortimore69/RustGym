@@ -1,7 +1,7 @@
 use std::fs;
 
 fn _solution() -> i32{
-    let names = fs::read_to_string("../../resources/d0/_22_names.txt").unwrap();
+    let names = fs::read_to_string("resources/d0/_22_names.txt").unwrap();
     let mut names: Vec<&str> = names.split(',').collect();
     names.sort();
 
