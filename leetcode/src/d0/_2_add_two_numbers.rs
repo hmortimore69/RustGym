@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 struct Solution;
 
 #[derive(PartialEq, Eq, Clone, Debug)]
